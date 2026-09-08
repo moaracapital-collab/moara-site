@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOARA CAPITAL Advisory | Estruturação Financeira e Mobilização de Capital Sustentável</title>
+    <!-- Fonte Google: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        moara: {
+                            dark: '#0B1E2D',    /* Azul Petróleo */
+                            slate: '#18364B',   /* Azul Slate */
+                            sage: '#3D6B6B',    /* Verde Sálvia */
+                            mint: '#5F8A82',    /* Verde Suave */
+                            gold: '#C5A059',    /* Dourado Sutil de Excelência */
+                            goldlight: '#E2C889',
+                            light: '#F8FAFC'    /* Off-White */
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-moara-light text-moara-dark font-sans antialiased selection:bg-moara-gold selection:text-white">
+
+    <!-- HEADER / NAVEGAÇÃO TRADICIONAL -->
+    <header class="sticky top-0 z-50 bg-moara-dark/95 backdrop-blur-md border-b border-moara-gold/30 text-white">
+        <div class="max-w-7xl mx-auto px-6 py-3.5 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-3.5">
+                <img src="logo.png" alt="Moara Capital Logo" class="h-10 w-10 object-cover rounded-lg border border-moara-gold/40 shadow-sm">
+                <div class="flex flex-col">
+                    <span class="font-bold tracking-wider text-base leading-none flex items-center gap-1.5">
+                        MOARA CAPITAL
+                        <span class="w-1.5 h-1.5 rounded-full bg-moara-gold inline-block"></span>
+                    </span>
+                    <span class="text-[9px] tracking-widest text-moara-mint uppercase font-medium mt-1">Advisory | Sustainable Finance</span>
+                </div>
+            </a>
+            
+            <!-- MENU DE NAVEGAÇÃO -->
+            <nav class="hidden md:flex gap-8 text-xs font-medium tracking-wide uppercase text-slate-300">
+                <a href="#proposito" class="hover:text-moara-gold transition-colors" data-pt="Propósito" data-en="Purpose">Propósito</a>
+                <a href="#como-atuamos" class="hover:text-moara-gold transition-colors" data-pt="Como Atuamos" data-en="Our Practice">Como Atuamos</a>
+                <a href="#solucoes-financeiras" class="hover:text-moara-gold transition-colors" data-pt="Soluções" data-en="Solutions">Soluções</a>
+                <a href="#derisking" class="hover:text-moara-gold transition-colors" data-pt="Avaliação de Riscos" data-en="Risk Assessment">Avaliação de Riscos</a>
+                <a href="#governanca" class="hover:text-moara-gold transition-colors" data-pt="Governança Corporativa" data-en="Corporate Governance">Governança Corporativa</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <!-- Chaveador de Idioma -->
+                <div class="flex items-center bg-moara-slate/60 p-1 rounded-md text-xs border border-moara-gold/20">
+                    <button onclick="changeLanguage('pt')" id="btn-pt" class="px-2 py-1 rounded font-semibold text-white bg-moara-sage">PT</button>
+                    <button onclick="changeLanguage('en')" id="btn-en" class="px-2 py-1 rounded font-semibold text-slate-400 hover:text-white">EN</button>
+                </div>
+
+                <a href="#contato" class="bg-moara-mint hover:bg-moara-sage text-white text-xs font-medium px-4 py-2 rounded-md transition-all border border-moara-gold/30" data-pt="Contato" data-en="Contact">
+                    Contato
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-moara-dark text-white py-32 px-6 overflow-hidden">
+        <!-- PLANO DE FUNDO HERO-BG.PNG -->
+        <div class="absolute inset-0 z-0">
+            <img src="hero-bg.png" alt="Ambiente Hídrico e Vidro Fosco Moara Capital" class="w-full h-full object-cover object-center">
+            <div class="absolute inset-0 bg-gradient-to-b from-moara-dark/40 via-moara-dark/55 to-moara-dark/85"></div>
+        </div>
+
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <!-- Tagline Slogan -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-moara-dark/70 backdrop-blur-md text-moara-goldlight border border-moara-gold/40 text-xs font-medium tracking-widest uppercase mb-8 shadow-md">
+                <span class="w-2 h-2 rounded-full bg-moara-gold"></span>
+                <span>MOARA CAPITAL ADVISORY</span>
+                <span class="text-slate-300">|</span>
+                <span class="text-moara-mint">SUSTAINABLE VALUE CREATION</span>
+            </div>
+
+            <!-- Headline Técnica Final -->
+            <h1 class="text-3xl md:text-5xl font-semibold leading-tight mb-6 tracking-tight text-white drop-shadow-lg" data-pt="Estruturação Financeira e Mobilização de Capital Sustentável." data-en="Financial Structuring and Sustainable Capital Mobilization.">
+                Estruturação Financeira e Mobilização de Capital Sustentável.
+            </h1>
+            
+            <p class="text-base md:text-lg text-slate-100 max-w-3xl mx-auto mb-10 leading-relaxed font-light drop-shadow-md" data-pt="Oferecemos assessoria especializada na avaliação de riscos, identificação de oportunidades e estruturação financeira para conectar negócios e projetos a provedores de capital adequado." data-en="Providing specialized advisory in risk assessment, opportunity identification, and financial structuring to connect businesses and projects with suitable capital providers.">
+                Oferecemos assessoria especializada na avaliação de riscos, identificação de oportunidades e estruturação financeira para conectar negócios e projetos a provedores de capital adequado.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contato" class="bg-moara-mint hover:bg-moara-sage text-white font-medium px-7 py-3.5 rounded-md transition-all text-sm text-center border border-moara-gold/30 shadow-lg" data-pt="Fazer Contato" data-en="Get in Touch">
+                    Fazer Contato
+                </a>
+                <a href="#como-atuamos" class="border border-slate-200 hover:border-moara-gold text-white font-medium px-7 py-3.5 rounded-md transition-all text-sm text-center bg-moara-dark/50 backdrop-blur-md" data-pt="Como Atuamos" data-en="Our Practice">
+                    Como Atuamos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROPÓSITO INSTITUCIONAL -->
+    <section id="proposito" class="py-20 bg-white border-b border-slate-200/60">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center gap-2 mb-4">
+                <span class="w-6 h-[1px] bg-moara-gold"></span>
+                <span class="text-moara-gold font-semibold text-xs tracking-widest uppercase" data-pt="Proposta de Valor" data-en="Value Proposition">Proposta de Valor</span>
+                <span class="w-6 h-[1px] bg-moara-gold"></span>
+            </div>
+            
+            <h2 class="text-2xl font-semibold text-moara-dark mb-6" data-pt="Fazer Nascer Negócios Sustentáveis e de Impacto" data-en="Bringing Sustainable and Impact Ventures to Life">Fazer Nascer Negócios Sustentáveis e de Impacto</h2>
+            
+            <p class="text-slate-600 text-sm md:text-base leading-relaxed max-w-3xl mx-auto font-light" data-pt="Na cosmologia Tupi-Guarani, Moara representa a força geradora, o ato supremo de 'fazer nascer' e despertar. Transportada para as finanças corporativas, a Moara Capital Advisory é o catalisador que estrutura a viabilidade técnica, econômica e a governança necessária para que novos projetos e estratégias de transição venham à luz, alinhando rigor financeiro e criação de valor sustentável." data-en="In Tupi-Guarani cosmology, Moara represents the generative force, the supreme act of 'bringing into birth' and awakening. Applied to corporate finance, Moara Capital Advisory serves as the catalyst structuring technical, economic, and the necessary governance required for transition projects and strategies to come to light, aligning financial rigor with sustainable value creation.">
+                Na cosmologia Tupi-Guarani, Moara representa a força geradora, o ato supremo de "fazer nascer" e despertar. Transportada para as finanças corporativas, a Moara Capital Advisory é o catalisador que estrutura a viabilidade técnica, econômica e a governança necessária para que novos projetos e estratégias de transição venham à luz, alinhando rigor financeiro e criação de valor sustentável.
+            </p>
+        </div>
+    </section>
+
+    <!-- BIG NUMBERS / POTENCIAL DO MERCADO BRASIL -->
+    <section class="bg-moara-slate text-white py-16 px-6 border-y border-moara-gold/30">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center">
+            <div class="p-4 border-r border-slate-700/50 last:border-none">
+                <div class="text-3xl md:text-4xl font-bold text-moara-goldlight mb-2" data-pt="US$ 3 Trilhões" data-en="US$ 3 Trillion">US$ 3 Trilhões</div>
+                <p class="text-xs text-slate-300 font-light leading-relaxed" data-pt="Potencial de investimentos alinhados ao clima no Brasil para a transição ecológica até 2050." data-en="Potential climate-aligned investments in Brazil for ecological transition by 2050.">Potencial de investimentos alinhados ao clima no Brasil para a transição ecológica até 2050.</p>
+            </div>
+            <div class="p-4 border-r border-slate-700/50 last:border-none">
+                <div class="text-3xl md:text-4xl font-bold text-moara-goldlight mb-2" data-pt="R$ 140+ Bilhões" data-en="R$ 140+ Billion">R$ 140+ Bilhões</div>
+                <p class="text-xs text-slate-300 font-light leading-relaxed" data-pt="Volume mobilizado recentemente em programas de Blended Finance e proteção cambial no Brasil." data-en="Recent volume mobilized in Blended Finance and FX hedge programs in Brazil.">Volume mobilizado recentemente em programas de Blended Finance e proteção cambial no Brasil.</p>
+            </div>
+            <div class="p-4">
+                <div class="text-3xl md:text-4xl font-bold text-moara-goldlight mb-2" data-pt="US$ 5.5 Bilhões" data-en="US$ 5.5 Billion">US$ 5.5 Bilhões</div>
+                <p class="text-xs text-slate-300 font-light leading-relaxed" data-pt="Volume emitido soberanamente pelo Brasil em títulos verdes focados na transição climática." data-en="Sovereign volume issued by Brazil in green bonds focused on climate transition.">Volume emitido soberanamente pelo Brasil em títulos verdes focados na transição climática.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMO ATUAMOS (ABORDAGEM POR MATURIDADE) -->
+    <section id="como-atuamos" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <span class="text-moara-gold font-semibold text-xs tracking-widest uppercase" data-pt="Nossa Abordagem" data-en="Our Approach">Nossa Abordagem</span>
+            <h2 class="text-2xl font-semibold text-moara-dark mt-2 mb-4" data-pt="Como Atuamos conforme o Momento do Negócio" data-en="How We Work Matching Business Stages">Como Atuamos conforme o Momento do Negócio</h2>
+            <p class="text-slate-600 text-sm leading-relaxed" data-pt="Cada estágio de desenvolvimento exige instrumentos financeiros e parceiros específicos. Identificamos a maturidade da operação para aplicar boas práticas e governança sob medida." data-en="Every development stage requires specific financial tools and partners. We identify operational maturity to deploy tailored best practices and governance.">Cada estágio de desenvolvimento exige instrumentos financeiros e parceiros específicos. Identificamos a maturidade da operação para aplicar boas práticas e governança sob medida.</p>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-2 mb-8 border-b border-slate-200 pb-4">
+            <button onclick="switchAtuamosTab('fase-inicial', this)" class="atuamos-tab-btn active-atuamos-tab px-6 py-3 text-xs font-semibold uppercase tracking-wider text-moara-sage border-b-2 border-moara-gold transition-all" data-pt="Projetos Iniciais e Concepção" data-en="Early Stage and Conception">Projetos Iniciais e Concepção</button>
+            <button onclick="switchAtuamosTab('fase-estruturacao', this)" class="atuamos-tab-btn px-6 py-3 text-xs font-semibold uppercase tracking-wider text-slate-500 hover:text-moara-dark border-b-2 border-transparent transition-all" data-pt="Estruturação e Captação" data-en="Structuring and Origination">Estruturação e Captação</button>
+            <button onclick="switchAtuamosTab('fase-transicao', this)" class="atuamos-tab-btn px-6 py-3 text-xs font-semibold uppercase tracking-wider text-slate-500 hover:text-moara-dark border-b-2 border-transparent transition-all" data-pt="Estágio de Transição" data-en="Transition Stage">Estágio de Transição</button>
+        </div>
+
+        <div class="bg-white p-8 md:p-10 rounded-2xl border border-slate-200/80 shadow-sm min-h-[240px]">
+            <!-- Fase 1: Inicial -->
+            <div id="fase-inicial" class="atuamos-tab-content">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <span class="text-xs font-bold text-moara-gold uppercase tracking-wider">Estágio Inicial</span>
+                        <h3 class="text-xl font-semibold text-moara-dark mt-1 mb-3" data-pt="Viabilidade e Prova de Conceito" data-en="Feasibility and Proof of Concept">Viabilidade e Prova de Conceito</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed font-light mb-4" data-pt="Para iniciativas em concepção ou piloto. Estruturamos o estudo de viabilidade técnico-econômica (EVTE), organizamos a tese financeira e intermediamos o enquadramento em editais de fomento, Venture Capital e outras fontes de capital de risco e paciente." data-en="For early projects or pilot stages. We structure technical-economic feasibility studies (EVTE), organize the financial thesis, and mediate alignment with development grants, Venture Capital, and other patient risk capital sources.">
+                            Para iniciativas em concepção ou piloto. Estruturamos o estudo de viabilidade técnico-econômica (EVTE), organizamos a tese financeira e intermediamos o enquadramento em editais de fomento, Venture Capital e outras fontes de capital de risco e paciente.
+                        </p>
+                    </div>
+                    <div class="bg-moara-light p-6 rounded-xl border border-slate-200 space-y-3 text-xs text-slate-700">
+                        <div class="flex items-center gap-2 font-medium">
+                            <span class="w-2 h-2 rounded-full bg-moara-gold"></span>
+                            <span data-pt="Estudo de viabilidade econômico-financeira (EVTE)" data-en="Economic-financial feasibility study (EVTE)">Estudo de viabilidade econômico-financeira (EVTE)</span>
+                        </div>
+                        <div class="flex items-center gap-2 font-medium">
+                            <span class="w-2 h-2 rounded-full bg-moara-gold"></span>
+                            <span data-pt="Apoio no enquadramento para fundos de impacto e capital de risco" data-en="Support in alignment for impact funds and risk capital">Apoio no enquadramento para fundos de impacto e capital de risco</span>
+                        </div>
+                        <div class="flex items-center gap-2 font-medium">
+                            <span class="w-2 h-2 rounded-full bg-moara-gold"></span>
+                            <span data-pt="Acompanhamento e alinhamento institucional junto a parceiros científicos" data-en="Monitoring and institutional alignment with scientific partners">Acompanhamento e alinhamento institucional junto a parceiros científicos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fase 2: Estruturação -->
+            <div id="fase-estruturacao" class="atuamos-tab-content hidden">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <span class="text-xs font-bold text-moara-gold uppercase tracking-wider">Estágio de Crescimento</span>
+                        <h3 class="text-xl font-semibold text-moara-dark mt-1 mb-3" data-pt="De-Risking e Acesso ao Mercado" data-en="De-Risking and Market Access">De-Risking e Acesso ao Mercado</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed font-light mb-4" data-pt="Para operações validadas que precisam captar recursos. Mapeamos riscos, assessoramos a estruturação de mecanismos de de-risking adequados e apoiamos a captação via estruturação de dívida corporativa (debêntures, empréstimos), Private Equity, Venture Capital e Blended Finance, utilizando linhas verdes como diferencial." data-en="For validated operations needing capital origination. We map risks, advise on suitable de-risking mechanisms, and support capital raising via corporate debt structuring (debentures, loans), Private Equity, Venture Capital, and Blended Finance, leveraging green lines as a differentiator.">
+                            Para operações validadas que precisam captar recursos. Mapeamos riscos, assessoramos a estruturação de mecanismos de de-risking adequados e apoiamos a captação via estruturação de dívida corporativa (debêntures, empréstimos), Private Equity, Venture Capital e Blended Finance, utilizando linhas verdes como diferencial.
+                        </p>
+                    </div>
+                    <div class="bg-moara-light p-6 rounded-xl border border-slate-200 space-y-3 text-xs text-slate-700">
+                        <div class="flex items-center gap-2 font-medium">
+                            <span class="w-2 h-2 rounded-full bg-moara-sage"></span>
+                            <span data-pt="Diagnóstico e assessoria na estrutura ótima de capital" data-en="Optimal capital structure diagnostic and advisory">Diagnóstico e assessoria na estrutura ótima de capital</span>
+                        </div>
+                        <div class="flex items-center gap-2 font-medium">
+                            <span class="w-2 h-2 rounded-full bg-moara-sage"></span>
+                            <span data-pt="Estruturação de dívida corporativa e mecanismos de de-risking" data-en="Corporate debt structuring and de-risking mechanisms">Estruturação de dívida corporativa e mecanismos de de-risking</span>
+                        </div>
+                        <div class="flex items-center gap-2 font-medium">
+                            <span class="w-2 h-2 rounded-full bg-moara-sage"></span>
+                            <span data-pt="Suporte na preparação de Data Room e Project Finance" data-en="Data Room setup and Project Finance support">Suporte na preparação de Data Room e Project Finance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fase 3: Transição -->
+            <div id="fase-transicao" class="atuamos-tab-content hidden">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <span class="text-xs font-bold text-moara-gold uppercase tracking-wider">Estágio de Transição</span>
+                        <h3 class="text-xl font-semibold text-moara-dark mt-1 mb-3" data-pt="Transição Energética e ESG Integration" data-en="Energy Transition and ESG Integration">Transição Energética e ESG Integration</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed font-light mb-4" data-pt="Conectado às nossas Corporate Solutions, apoiamos a gestão no processo decisório financeiro aplicando ESG Integration nas análises para identificar alternativas que tornem a operação mais eficiente. Avaliamos projetos de descarbonização, transição energética, enquadramento na Lei do Carbono, uso sustentável da água e economia circular." data-en="Connected to our Corporate Solutions, we support management in financial decision-making by applying ESG Integration in our analyses to identify resilient and efficient operational alternatives. Evaluating decarbonization, energy transition, Carbon Law compliance, sustainable water usage, and circular economy.">
+                            Conectado às nossas Corporate Solutions, apoiamos a gestão no processo decisório financeiro aplicando ESG Integration nas análises para identificar alternativas que tornem a operação mais eficiente. Avaliamos projetos de descarbonização, transição energética, enquadramento na Lei do Carbono, uso sustentável da água e economia circular.
+                        </p>
+                    </div>
+                    <div class="bg-moara-light p-6 rounded-xl border border-slate-200 space-y-3 text-xs text-slate-700">
+                        <div class="flex items-center gap-2 font-medium">
+                            <span class="w-2 h-2 rounded-full bg-moara-mint"></span>
+                            <span data-pt="ESG Integration nas análises para descarbonização e transição" data-en="ESG Integration in analyses for decarbonization and transition">ESG Integration nas análises para descarbonização e transição</span>
+                        </div>
+                        <div class="flex items-center gap-2 font-medium">
+                            <span class="w-2 h-2 rounded-full bg-moara-mint"></span>
+                            <span data-pt="Análise de enquadramento para a Lei do Carbono" data-en="Compliance analysis for Carbon Law">Análise de enquadramento para a Lei do Carbono</span>
+                        </div>
+                        <div class="flex items-center gap-2 font-medium">
+                            <span class="w-2 h-2 rounded-full bg-moara-mint"></span>
+                            <span data-pt="Apoio decisório na contratação de tecnologias sustentáveis e eficientes" data-en="Decision support for sustainable and efficient technologies">Apoio decisório na contratação de tecnologias sustentáveis e eficientes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUSTAINABLE FINANCE ADVISORY (SOLUÇÕES) -->
+    <section id="solucoes-financeiras" class="relative bg-white py-24 px-6 border-y border-slate-200/60">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-moara-gold font-semibold text-xs tracking-widest uppercase" data-pt="Soluções em Finanças Sustentáveis" data-en="Sustainable Finance Solutions">Soluções em Finanças Sustentáveis</span>
+                <h2 class="text-2xl font-semibold text-moara-dark mt-2 mb-4" data-pt="Sustainable Finance Advisory" data-en="Sustainable Finance Advisory">Sustainable Finance Advisory</h2>
+                <p class="text-slate-600 text-sm leading-relaxed" data-pt="Originação e estruturação de capital via Project Finance, operações estruturadas e Blended Finance para alinhar a estrutura de capital às demandas do mercado." data-en="Capital origination and structuring via Project Finance, structured operations, and Blended Finance matching capital structures to market demands.">Originação e estruturação de capital via Project Finance, operações estruturadas e Blended Finance para alinhar a estrutura de capital às demandas do mercado.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-moara-light p-7 rounded-2xl border border-slate-200 shadow-sm">
+                    <span class="text-xs font-bold text-moara-gold uppercase tracking-wider block mb-2">Project Finance</span>
+                    <h3 class="font-semibold text-base text-moara-dark mb-2" data-pt="Estudos de Viabilidade (EVTE)" data-en="Feasibility Studies (EVTE)">Estudos de Viabilidade (EVTE)</h3>
+                    <p class="text-xs text-slate-600 font-light leading-relaxed mb-4" data-pt="Modelagem preditiva de fluxo de caixa unindo o rigor do EVTE tradicional à integração ESG, avaliando riscos operacionais, socioambientais e volatilidade de mercado para a fundamentação técnica do projeto." data-en="Predictive cash flow modeling uniting traditional EVTE rigor with ESG integration, assessing operational, environmental risks, and market volatility for project technical foundation.">Modelagem preditiva de fluxo de caixa unindo o rigor do EVTE tradicional à integração ESG, avaliando riscos operacionais, socioambientais e volatilidade de mercado para a fundamentação técnica do projeto.</p>
+                </div>
+
+                <div class="bg-moara-light p-7 rounded-2xl border border-slate-200 shadow-sm">
+                    <span class="text-xs font-bold text-moara-gold uppercase tracking-wider block mb-2">Estruturação de Capital</span>
+                    <h3 class="font-semibold text-base text-moara-dark mb-2" data-pt="Captação e Blended Finance" data-en="Capital Raising and Blended Finance">Captação e Blended Finance</h3>
+                    <p class="text-xs text-slate-600 font-light leading-relaxed mb-4" data-pt="Aconselhamento da estrutura de capital adequada, articulando estruturação de dívida corporativa, capital de risco e opções de capital catalítico como mitigadores estratégicos." data-en="Optimal capital structure advisory, combining corporate debt structuring, risk capital, and catalytic capital options as strategic mitigants.">Aconselhamento da estrutura de capital adequada, articulando estruturação de dívida corporativa, capital de risco e opções de capital catalítico como mitigadores estratégicos.</p>
+                </div>
+
+                <div class="bg-moara-light p-7 rounded-2xl border border-slate-200 shadow-sm">
+                    <span class="text-xs font-bold text-moara-gold uppercase tracking-wider block mb-2">Roadshow e Originação</span>
+                    <h3 class="font-semibold text-base text-moara-dark mb-2" data-pt="Acesso a Provedores de Capital" data-en="Access to Capital Providers">Acesso a Provedores de Capital</h3>
+                    <p class="text-xs text-slate-600 font-light leading-relaxed mb-4" data-pt="Estruturação de Data Room de investimento, documentação técnica e apoio na condução de negociações com fundos de investimento, bancos e alocadores institucionais." data-en="Investment Data Room setup, technical documentation, and negotiation support with investment funds, banks, and institutional allocators.">Estruturação de Data Room de investimento, documentação técnica e apoio na condução de negociações com fundos de investimento, bancos e alocadores institucionais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AVALIAÇÃO DE RISCOS E DE-RISKING -->
+    <section id="derisking" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-moara-gold font-semibold text-xs tracking-widest uppercase" data-pt="Gestão de Riscos" data-en="Risk Management">Gestão de Riscos</span>
+            <h2 class="text-2xl font-semibold text-moara-dark mt-2 mb-4" data-pt="Avaliação de Riscos e De-Risking" data-en="Risk Assessment and De-Risking">Avaliação de Riscos e De-Risking</h2>
+            <p class="text-slate-600 text-sm leading-relaxed" data-pt="Mapeamos vulnerabilidades e assessoramos a estruturação de mitigadores de risco adequados para transformar projetos em ativos atrativos para provedores de capital." data-en="Mapping vulnerabilities and advising on suitable risk mitigants to transform projects into attractive assets for capital providers.">Mapeamos vulnerabilidades e assessoramos a estruturação de mitigadores de risco adequados para transformar projetos em ativos atrativos para provedores de capital.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- Quadro 1 -->
+            <div class="bg-white p-7 rounded-xl border border-slate-200/80 shadow-sm">
+                <h3 class="font-semibold text-base text-moara-dark mb-2" data-pt="Mapeamento de Riscos" data-en="Risk Mapping">Mapeamento de Riscos</h3>
+                <p class="text-xs text-slate-600 leading-relaxed font-light" data-pt="Identificação dos riscos operacionais, financeiros e socioambientais, medindo a probabilidade e a severidade do impacto sobre a geração futura de caixa." data-en="Identifying operational, financial, and environmental risks, measuring probability and impact severity on future cash flows.">Identificação dos riscos operacionais, financeiros e socioambientais, medindo a probabilidade e a severidade do impacto sobre a geração futura de caixa.</p>
+            </div>
+
+            <!-- Quadro 2 -->
+            <div class="bg-white p-7 rounded-xl border border-slate-200/80 shadow-sm">
+                <h3 class="font-semibold text-base text-moara-dark mb-2" data-pt="Mecanismos de De-Risking e Perfil do Investidor" data-en="De-Risking Mechanisms and Investor Profile">Mecanismos de De-Risking e Perfil do Investidor</h3>
+                <p class="text-xs text-slate-600 leading-relaxed font-light" data-pt="Assessoria na estruturação de salvaguardas, coberturas, garantias e alinhamento do perfil de risco e retorno para atender às exigências de alocadores de capital institucionais e comerciais." data-en="Advising on structuring safeguards, coverage, guarantees, and risk-return profile alignment to meet institutional and commercial capital allocators' expectations.">Assessoria na estruturação de salvaguardas, coberturas, garantias e alinhamento do perfil de risco e retorno para atender às exigências de alocadores de capital institucionais e comerciais.</p>
+            </div>
+
+            <!-- Quadro 3 -->
+            <div class="bg-white p-7 rounded-xl border border-slate-200/80 shadow-sm">
+                <h3 class="font-semibold text-base text-moara-dark mb-2" data-pt="Apoio Conceitual para Reporte Internacional" data-en="Conceptual Support for International Reporting">Apoio Conceitual para Reporte Internacional</h3>
+                <p class="text-xs text-slate-600 leading-relaxed font-light" data-pt="Preparação conceitual de dados e indicadores de risco em linha com os padrões internacionais exigidos pelo mercado global para reporte de governança e sustentabilidade." data-en="Conceptual preparation of risk data and indicators aligned with international standards required by global capital markets for governance and sustainability reporting.">Preparação conceitual de dados e indicadores de risco em linha com os padrões internacionais exigidos pelo mercado global para reporte de governança e sustentabilidade.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORPORATE SOLUTIONS: GOVERNANCE AND ESG ADVISORY -->
+    <section id="corporate-solutions" class="py-24 px-6 max-w-6xl mx-auto border-t border-slate-200/60">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <span class="text-moara-gold font-semibold text-xs tracking-widest uppercase" data-pt="Soluções Corporativas" data-en="Corporate Solutions">Soluções Corporativas</span>
+            <h2 class="text-2xl font-semibold text-moara-dark mt-2 mb-4" data-pt="Corporate Solutions: Governance e ESG Advisory" data-en="Corporate Solutions: Governance and ESG Advisory">Corporate Solutions: Governance e ESG Advisory</h2>
+            <p class="text-slate-600 text-sm leading-relaxed" data-pt="Apoiamos a gestão no processo decisório através de estudos e análises de quais as melhores soluções para a transição e mitigação de riscos socioambientais, planos de adaptação e recuperação." data-en="Supporting management in financial decision-making through studies and analyses to identify the best solutions for transition, environmental risk mitigation, adaptation, and recovery plans.">Apoiamos a gestão no processo decisório através de estudos e análises de quais as melhores soluções para a transição e mitigação de riscos socioambientais, planos de adaptação e recuperação.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 text-xs">
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                <strong class="block text-moara-dark font-semibold text-sm mb-1.5" data-pt="Estruturação de FP&amp;A" data-en="FP&amp;A Structuring">Estruturação de FP&amp;A</strong>
+                <p class="text-slate-500 font-light leading-relaxed" data-pt="Apoio na organização do planejamento financeiro, orçamento e relatórios gerenciais internos para a tomada de decisão." data-en="Support in organizing financial planning, budgeting, and internal management reporting for decision-making.">Apoio na organização do planejamento financeiro, orçamento e relatórios gerenciais internos para a tomada de decisão.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                <strong class="block text-moara-dark font-semibold text-sm mb-1.5" data-pt="Descarbonização e Gestão de Emissões" data-en="Decarbonization and Emissions Management">Descarbonização e Gestão de Emissões</strong>
+                <p class="text-slate-500 font-light leading-relaxed" data-pt="Avaliação financeira para transição energética e coordenação externa para inventários de carbono (Escopos 1, 2 e 3)." data-en="Financial evaluation for energy transition and external coordination for carbon accounting (Scopes 1, 2, and 3).">Avaliação financeira para transição energética e coordenação externa para inventários de carbono (Escopos 1, 2 e 3).</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                <strong class="block text-moara-dark font-semibold text-sm mb-1.5" data-pt="Soluções Verdes e Impacto Positivo" data-en="Green Solutions and Positive Impact">Soluções Verdes e Impacto Positivo</strong>
+                <p class="text-slate-500 font-light leading-relaxed" data-pt="Análise de viabilidade para eficiência hídrica, economia circular e adequação à regulação e à Lei do Carbono." data-en="Feasibility analysis for water efficiency, circular economy, and compliance with Carbon Law and regulations.">Análise de viabilidade para eficiência hídrica, economia circular e adequação à regulação e à Lei do Carbono.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                <strong class="block text-moara-dark font-semibold text-sm mb-1.5" data-pt="Gestão de Ativos de Carbono" data-en="Carbon Asset Management">Gestão de Ativos de Carbono</strong>
+                <p class="text-slate-500 font-light leading-relaxed" data-pt="Apoio na articulação para certificação, custódia e comercialização estratégica de créditos de carbono no mercado livre ou regulado." data-en="Advisory support for credit certification, custody, and strategic commercialization in voluntary or regulated markets.">Apoio na articulação para certificação, custódia e comercialização estratégica de créditos de carbono no mercado livre ou regulado.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                <strong class="block text-moara-dark font-semibold text-sm mb-1.5" data-pt="Assessoria Jurídica e Documental" data-en="Legal and Document Advisory">Assessoria Jurídica e Documental</strong>
+                <p class="text-slate-500 font-light leading-relaxed" data-pt="Coordenação com escritórios especializados para estruturação de contratos e adequação de governança societária." data-en="Coordination with specialized firms for contract structuring and corporate governance compliance.">Coordenação com escritórios especializados para estruturação de contratos e adequação de governança societária.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                <strong class="block text-moara-dark font-semibold text-sm mb-1.5" data-pt="Estrutura de Dados IFRS" data-en="IFRS Data Structuring">Estrutura de Dados IFRS</strong>
+                <p class="text-slate-500 font-light leading-relaxed" data-pt="Consultoria especializada para implementação da governança e estrutura de dados fundamentais para o reporte IFRS S1 e S2." data-en="Specialized consulting for governance implementation and data structuring essential for IFRS S1 and S2 reporting.">Consultoria especializada para implementação da governança e estrutura de dados fundamentais para o reporte IFRS S1 e S2.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MÓDULO OPCIONAL DE GOVERNANÇA IFRS S1 E S2 -->
+    <section id="governanca" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="relative bg-moara-dark text-white rounded-2xl p-8 md:p-12 overflow-hidden shadow-xl border border-moara-gold/20">
+            <div class="max-w-3xl relative z-10">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="w-1.5 h-1.5 rounded-full bg-moara-gold"></span>
+                    <span class="text-moara-gold font-medium text-xs tracking-widest uppercase" data-pt="Módulo Adicional de Governança" data-en="Optional Governance Module">Módulo Adicional de Governança</span>
+                </div>
+                
+                <h2 class="text-2xl font-semibold mb-4" data-pt="Antecipação Regulatória e Reporte IFRS S1 e S2" data-en="Regulatory Readiness and IFRS S1/S2 Reporting">Antecipação Regulatória e Reporte IFRS S1 e S2</h2>
+                
+                <p class="text-slate-300 text-sm mb-6 leading-relaxed font-light" data-pt="Para empresas e projetos que desejam se antecipar às exigências dos grandes investidores institucionais e reguladores globais, oferecemos o módulo opcional de governança. Estruturamos os dados socioambientais para divulgação sob os padrões internacionais IFRS S1 e S2, garantindo rastreabilidade e comparabilidade." data-en="For companies and projects seeking to stay ahead of institutional investor and global regulatory expectations, we offer an optional governance module. We structure environmental data for disclosure under international IFRS S1 and S2 standards, ensuring traceability and comparability.">
+                    Para empresas e projetos que desejam se antecipar às exigências dos grandes investidores institucionais e reguladores globais, oferecemos o módulo opcional de governança. Estruturamos os dados socioambientais para divulgação sob os padrões internacionais IFRS S1 e S2, garantindo rastreabilidade e comparabilidade.
+                </p>
+
+                <div class="grid sm:grid-cols-2 gap-4 text-xs mb-4">
+                    <div class="bg-moara-slate/60 backdrop-blur-sm p-5 rounded-lg border border-moara-gold/20">
+                        <strong class="block text-moara-goldlight font-semibold mb-1 text-sm">IFRS S1</strong>
+                        <span class="text-slate-300 font-light" data-pt="Divulgação de informações financeiras materiais relacionadas à sustentabilidade." data-en="Disclosure of material sustainability-related financial information.">Divulgação de informações financeiras materiais relacionadas à sustentabilidade.</span>
+                    </div>
+                    <div class="bg-moara-slate/60 backdrop-blur-sm p-5 rounded-lg border border-moara-gold/20">
+                        <strong class="block text-moara-goldlight font-semibold mb-1 text-sm">IFRS S2</strong>
+                        <span class="text-slate-300 font-light" data-pt="Mapeamento e reporte de impactos e riscos climáticos nas demonstrações contábeis." data-en="Mapping and reporting climate-related financial impacts and risks in corporate statements.">Mapeamento e reporte de impactos e riscos climáticos nas demonstrações contábeis.</span>
+                    </div>
+                </div>
+
+                <p class="text-xs text-moara-goldlight font-medium" data-pt="* Módulo opcional recomendado para projetos em fase de captação institucional ou consolidação." data-en="* Optional module recommended for projects in institutional fundraising or consolidation stages.">* Módulo opcional recomendado para projetos em fase de captação institucional ou consolidação.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULÁRIO DE CONTATO -->
+    <section id="contato" class="py-24 px-6 max-w-2xl mx-auto">
+        <div class="text-center mb-10">
+            <h2 class="text-2xl font-semibold text-moara-dark mb-2" data-pt="Contato" data-en="Contact">Contato</h2>
+            <p class="text-slate-600 text-sm" data-pt="Entre em contato para avaliar o momento do seu projeto e as possibilidades de captação." data-en="Get in touch to evaluate your project stage and capital raising options.">Entre em contato para avaliar o momento do seu projeto e as possibilidades de captação.</p>
+        </div>
+
+        <form class="bg-white p-8 rounded-xl border border-slate-200/80 shadow-sm space-y-5">
+            <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1" data-pt="Nome Completo" data-en="Full Name">Nome Completo</label>
+                <input type="text" required class="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:ring-1 focus:ring-moara-gold focus:outline-none text-xs">
+            </div>
+            <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1" data-pt="E-mail Corporativo" data-en="Corporate Email">E-mail Corporativo</label>
+                <input type="email" required class="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:ring-1 focus:ring-moara-gold focus:outline-none text-xs" placeholder="nome@moaracapital.com">
+            </div>
+            <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1" data-pt="Assunto Principal" data-en="Main Topic">Assunto Principal</label>
+                <select class="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:ring-1 focus:ring-moara-gold focus:outline-none text-xs text-slate-700">
+                    <option data-pt="Captação de Recursos e Viabilidade (EVTE)" data-en="Capital Raising and Feasibility (EVTE)">Captação de Recursos e Viabilidade (EVTE)</option>
+                    <option data-pt="Estruturação de Capital e De-Risking" data-en="Capital Structuring and De-Risking">Estruturação de Capital e De-Risking</option>
+                    <option data-pt="Apoio Decisório em Soluções Sustentáveis" data-en="Sustainable Solutions Decision Advisory">Apoio Decisório em Soluções Sustentáveis</option>
+                    <option data-pt="Adequação Opcional IFRS S1 e S2" data-en="Optional IFRS S1 and S2 Governance">Adequação Opcional IFRS S1 e S2</option>
+                </select>
+            </div>
+            <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1" data-pt="Mensagem" data-en="Message">Mensagem</label>
+                <textarea rows="3" class="w-full px-3.5 py-2.5 rounded-md border border-slate-300 focus:ring-1 focus:ring-moara-gold focus:outline-none text-xs"></textarea>
+            </div>
+            <button type="button" class="w-full bg-moara-mint hover:bg-moara-sage text-white font-medium py-3 rounded-md transition-all text-xs border border-moara-gold/30 shadow-sm" data-pt="Enviar Mensagem" data-en="Send Message">
+                Enviar Mensagem
+            </button>
+        </form>
+    </section>
+
+    <!-- FOOTER INSTITUCIONAL -->
+    <footer class="bg-moara-dark text-slate-400 py-12 px-6 border-t border-moara-slate/40 text-xs">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3">
+                <img src="logo.png" alt="Moara Capital Logo" class="h-8 w-8 object-cover rounded border border-moara-gold/40">
+                <div class="flex flex-col">
+                    <span class="text-white font-bold tracking-wider">MOARA CAPITAL Advisory</span>
+                    <span class="text-[10px] text-moara-goldlight tracking-widest uppercase">SUSTAINABLE VALUE CREATION</span>
+                </div>
+            </div>
+
+            <div class="text-center md:text-left text-[11px] text-slate-400 font-light max-w-xs" data-pt="S3 (Search Fund): Mantemos a intenção de identificar oportunidades para aquisição e transição de gestão." data-en="S3 (Search Fund): Maintaining a focus on identifying opportunities for acquisition and management transition.">
+                S3 (Search Fund): Mantemos a intenção de identificar oportunidades para aquisição e transição de gestão.
+            </div>
+
+            <div class="text-right">
+                São Paulo, SP | <a href="mailto:contato@moaracapital.com" class="hover:text-moara-gold transition-colors">contato@moaracapital.com</a>
+            </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto my-6 h-[1px] bg-gradient-to-r from-transparent via-moara-gold/30 to-transparent"></div>
+
+        <div class="max-w-6xl mx-auto text-center text-[10px] text-slate-500">
+            &copy; 2026 MOARA CAPITAL Advisory. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <!-- SCRIPTS DE ABAS E IDIOMA -->
+    <script>
+        // Função para chavear abas da seção Como Atuamos
+        function switchAtuamosTab(faseId, btnElement) {
+            document.querySelectorAll('#como-atuamos .atuamos-tab-content').forEach(el => el.classList.add('hidden'));
+            document.getElementById(faseId).classList.remove('hidden');
+
+            document.querySelectorAll('#como-atuamos .atuamos-tab-btn').forEach(btn => {
+                btn.className = 'atuamos-tab-btn px-6 py-3 text-xs font-semibold uppercase tracking-wider text-slate-500 hover:text-moara-dark border-b-2 border-transparent transition-all';
+            });
+
+            btnElement.className = 'atuamos-tab-btn active-atuamos-tab px-6 py-3 text-xs font-semibold uppercase tracking-wider text-moara-sage border-b-2 border-moara-gold transition-all';
+        }
+
+        // Função para chavear abas da seção Soluções
+        function switchSolucoesTab(solId, btnElement) {
+            document.querySelectorAll('#solucoes-financeiras .sol-tab-content').forEach(el => el.classList.add('hidden'));
+            document.getElementById(solId).classList.remove('hidden');
+
+            document.querySelectorAll('#solucoes-financeiras .sol-tab-btn').forEach(btn => {
+                btn.className = 'sol-tab-btn px-6 py-3 text-xs font-semibold uppercase tracking-wider text-slate-500 hover:text-moara-dark border-b-2 border-transparent transition-all';
+            });
+
+            btnElement.className = 'sol-tab-btn active-sol-tab px-6 py-3 text-xs font-semibold uppercase tracking-wider text-moara-sage border-b-2 border-moara-gold transition-all';
+        }
+
+        // Função de Idioma PT / EN
+        function changeLanguage(lang) {
+            const elements = document.querySelectorAll('[data-pt]');
+            
+            elements.forEach(el => {
+                if (lang === 'en') {
+                    el.textContent = el.getAttribute('data-en');
+                } else {
+                    el.textContent = el.getAttribute('data-pt');
+                }
+            });
+
+            const btnPt = document.getElementById('btn-pt');
+            const btnEn = document.getElementById('btn-en');
+
+            if (lang === 'en') {
+                btnEn.className = 'px-2 py-1 rounded font-semibold text-white bg-moara-sage';
+                btnPt.className = 'px-2 py-1 rounded font-semibold text-slate-400 hover:text-white';
+                document.documentElement.lang = 'en';
+            } else {
+                btnPt.className = 'px-2 py-1 rounded font-semibold text-white bg-moara-sage';
+                btnEn.className = 'px-2 py-1 rounded font-semibold text-slate-400 hover:text-white';
+                document.documentElement.lang = 'pt-BR';
+            }
+        }
+    </script>
+</body>
+</html>
